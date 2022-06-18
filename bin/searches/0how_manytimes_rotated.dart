@@ -25,7 +25,7 @@ class HowManyTimesRotated {
 void main(List<String> args) {
   HowManyTimesRotated howManyTimesRotated = HowManyTimesRotated();
 
-  List<int> s = [1, 2, 3, 4, 3, 2, 5, 7, 8];
+  List<int> s = [1, 2, 3, 4, 3, 2, 5];
 
   print("The array has been rotated  ${howManyTimesRotated.rotated(s)}  times");
 }

@@ -1,4 +1,4 @@
-class LinkList_Sort {
+class LinkListSort {
   bool isSorted(List<int> p, int option) {
     List<int> a = p;
 
@@ -28,7 +28,7 @@ class LinkList_Sort {
         }
         b.sort();
         // array b is sorted and it will return true when checked with sorted list
-        LinkList_Sort uu = LinkList_Sort();
+        LinkListSort uu = LinkListSort();
         if (uu.compare(a, b)) {
           return true;
         } else {
@@ -55,7 +55,7 @@ class LinkList_Sort {
           a[i1++] = ptr1.val!;
           // storing the sorted values in the array
         }
-        LinkList_Sort uu1 = new LinkList_Sort();
+        LinkListSort uu1 = new LinkListSort();
         // array b is not sorted and it will return false when checked with sorted list
         if (uu1.compare(a, b)) {
           return true;
@@ -85,7 +85,7 @@ class LinkList_Sort {
         }
         b.sort();
         // array b is sorted and it will return true when checked with sorted list
-        LinkList_Sort uu2 = new LinkList_Sort();
+        LinkListSort uu2 = new LinkListSort();
         if (uu2.compare(a, b)) {
           return true;
         } else {
@@ -275,9 +275,9 @@ class Task2 {
 }
 
 void main(List<String> args) {
-  LinkList_Sort linkList_Sort = LinkList_Sort();
+  LinkListSort linkListSort = LinkListSort();
 
   List<int> v = [1, 2, 3, 2, 3, 2, 1, 2, 3, 2, 21, 2, 3];
-  print(linkList_Sort.isSorted(v, 0));
-  linkList_Sort.
+  print(linkListSort.isSorted(v, 0));
+  
 }

@@ -6,14 +6,14 @@ class PigeonholeSort {
     }
 
     int numOfPigeonholes = 1 + maxElement;
-    List pigeonHole = List.filled(numOfPigeonholes, 0);
+    List<List<int>> pigeonHole = List.filled(numOfPigeonholes, []);
 
     for (var k = 0; k < numOfPigeonholes; k++) {
-      pigeonHole = [];
+      pigeonHole[k] = [];
     }
 
     for (var t in array) {
-      pigeonHole.add(t)
+      pigeonHole[t].add(t);
     }
 
     int k = 0;
@@ -36,8 +36,6 @@ void main(List<String> args) {
   pigeonholeSort.sort(arr);
 
   print("Sorted order is : ");
-  for (int i = 0; i < arr.length; i++) {
-    (arr[i]) <= (arr[i + 1]);
-  }
+ 
   print(arr);
 }

@@ -3,8 +3,8 @@ import 'dart:math';
 import '../devutils/searches/search_algorithm.dart';
 import 'binarysearch.dart';
 
-class ExponentialSearch with BinarySearch implements SearchAlgorithm {
-  BinarySearch binarySearch = BinarySearch();
+class ExponentialSearch implements SearchAlgorithm {
+  
 
   @override
   int find<T extends Comparable<T>>(List<T> array, T key) {
@@ -31,7 +31,7 @@ void main(List<String> args) {
 
   List<int> integers = [1,2,3,2,1,2,32,4,5,6,5,4,3];
 
-  ExponentialSearch search = new ExponentialSearch();
+  ExponentialSearch search = ExponentialSearch();
   int atIndex = search.find<num>(integers, 9);
 
   print("Found ${integers[atIndex]} at index $atIndex. An array length ${integers.length}");
